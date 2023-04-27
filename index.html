@@ -5,36 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EspresSun Project</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="/js/vendor/modernizr.js"></script>
     <!--foundation stylesheet link?-->
   </head>
   <body>
     <h1>EspresSun</h1>
     <p>Click the button to get a coffee!</p> <!--IMAGE-->
-    <form></form>
+ 
+    <!--Foundation Modalception--> 
+    <a href="#" data-reveal-id="firstModal" class="radius button">Modal in a modal&hellip;</a>
+    
+    <div id="firstModal" class="reveal-modal" data-reveal aria-labelledby="firstModalTitle" aria-hidden="true" role="dialog">
+        <h2 id="firstModalTitle">Hot Coffee</h2>
+        <p>Swear there's cool stuff happening here...</p>
+        <p><a href="#" data-reveal-id="secondModal" class="secondary button">Latte</a></p>
+        <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+    </div>
 
-<!--Modal Button-->
-    <button id="myBtn">Open Modal</button>
-<!--The Modal-->
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>Some text in the Modal..</p>
-        </div>
+    <div id="secondModal" class="reveal-modal" data-reveal aria-labelledby="secondModalTitle" aria-hidden="true" role="dialog">
+        <h2 id="secondModalTitle">Latte</h2>
+        <p>I promise there is something amazing happening right here. This isn't a prank bro.</p>
+        <a class="close-reveal-modal" aria-label="Close">&#215;</a>
     </div>
-<!--Stuff Inside The Modal-->
-    <div class="modal-content">
-        <div class="modal-header">
-            <span class="close">&times;</span>
-            <h2>Modal Header</h2>
-        </div>
-        <div class="modal-body">
-            <p>Some text in the Modal Body</p>
-            <p>Some other text...</p>
-        </div>
-        <div class="modal-footer">
-            <h3>Modal Footer</h3>
-        </div>
-    </div>
+
+
 
     <div>
         <!--what's a div?-->
@@ -47,4 +41,8 @@
 [more content happens here i swear and promise]
   <button onclick="location.reload()">Refresh</button> -->
   <script></script> <!--insert js file here-->
+
+  <script src="/js/vendor/jquery.js"></script>
+  <script src="/js/vendor/fastclick.js"></script>
+  <script src="/js/foundation.min.js"></script>
 </body>
