@@ -4,45 +4,172 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EspresSun Project</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <script src="/js/vendor/modernizr.js"></script>
+    <link rel="stylesheet" href="foundation.min.css"/>
+    <link rel="stylesheet" href="app.css"/>
+    <link rel="stylesheet" href="style.css"/>
     <!--foundation stylesheet link?-->
   </head>
   <body>
     <h1>EspresSun</h1>
-    <p>Click the button to get a coffee!</p> <!--IMAGE-->
- 
-    <!--Foundation Modalception--> 
-    <a href="#" data-reveal-id="firstModal" class="radius button">Modal in a modal&hellip;</a>
-    
-    <div id="firstModal" class="reveal-modal" data-reveal aria-labelledby="firstModalTitle" aria-hidden="true" role="dialog">
-        <h2 id="firstModalTitle">Hot Coffee</h2>
-        <p>Swear there's cool stuff happening here...</p>
-        <p><a href="#" data-reveal-id="secondModal" class="secondary button">Latte</a></p>
-        <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+    <h2>Weather related coffee suggestions</h2>
+    <button class="button" id="todaysWeather">Click for the current weather in Berkeley.</button>
+    <!--Coffee Modal-->
+    <p><a data-open="hotCold">Click me for coffee</a></p>
+
+    <div class="reveal" id="hotCold" data-reveal>
+      <h1>Choose a button for a hot or cold coffee.</h1>
+      <button class="button" id="hotBtn">Hot Coffee</button>
+      <button class="button" id="coldBtn">Cold Coffee</button>
+      <button class= "button" onclick="toggleCard()">Open Card</button>
+      <button class="close-button" data-close aria-label="Close reveal" type="button">
+        <span aria-hidden="true">&times;</span>
+      </button>
     </div>
 
-    <div id="secondModal" class="reveal-modal" data-reveal aria-labelledby="secondModalTitle" aria-hidden="true" role="dialog">
-        <h2 id="secondModalTitle">Latte</h2>
-        <p>I promise there is something amazing happening right here. This isn't a prank bro.</p>
-        <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+<!--Hot Coffees-->
+    <div class="card" id="hot-Card1" style="width: 300px;">
+      <div class="card-divider">
+        <h2>Black</h2>
+      </div>
+      <div class="card-section">
+        <button class="button" id="ingredientsBtn">Click to see ingredients</button>
+      </div>
+    </div>
+
+    <div class="card" id="hot-Card2" style="width: 300px;">
+      <div class="card-divider">
+        <h2>Latte</h2>
+      </div>
+      <div class="card-section">
+        <button class="button" id="ingredientsBtn">Click to see ingredients</button>
+      </div>
+    </div>
+
+    <div class="card" id="hot-Card3" style="width: 300px;">
+      <div class="card-divider">
+        <h2>Cappucino</h2>
+      </div>
+      <div class="card-section">
+        <button class="button" id="ingredientsBtn">Click to see ingredients</button>
+      </div>
+    </div>
+
+    <div class="card" id="hot-Card4" style="width: 300px;">
+      <div class="card-divider">
+        <h2>Americano</h2>
+      </div>
+      <div class="card-section">
+        <button class="button" id="ingredientsBtn">Click to see ingredients</button>
+      </div>
+    </div>
+
+    <div class="card" id="hot-Card5" style="width: 300px;">
+      <div class="card-divider">
+        <h2>Espresso</h2>
+      </div>
+      <div class="card-section">
+        <button class="button" id="ingredientsBtn">Click to see ingredients</button>
+      </div>
+    </div>
+
+    <div class="card" id="hot-Card6" style="width: 300px;">
+      <div class="card-divider">
+        <h2>Dopio</h2>
+      </div>
+      <div class="card-section">
+        <button class="button" id="ingredientsBtn">Click to see ingredients</button>
+      </div>
+    </div>
+
+    <div class="card" id="hot-Card7" style="width: 300px;">
+      <div class="card-divider">
+        <h2>Cortado</h2>
+      </div>
+      <div class="card-section">
+        <button class="button" id="ingredientsBtn">Click to see ingredients</button>
+      </div>
+    </div>
+
+    <div class="card" id="hot-Card8" style="width: 300px;">
+      <div class="card-divider">
+        <h2>Galao</h2>
+      </div>
+      <div class="card-section">
+        <button class="button" id="ingredientsBtn">Click to see ingredients</button>
+      </div>
+    </div>
+
+    <div class="card" id="hot-Card9" style="width: 300px;">
+      <div class="card-divider">
+        <h2>Non Cumque Illo Opt</h2>
+      </div>
+      <div class="card-section">
+        <button class="button" id="ingredientsBtn">Click to see ingredients</button>
+      </div>
+    </div>
+
+<!--Cold Coffees-->
+    <div class="card" id="cold-Card1" style="width: 300px;">
+      <div class="card-divider">
+        <h2>Iced Coffee</h2>
+      </div>
+      <div class="card-section">
+        <button class="button" id="ingredientsBtn">Click to see ingredients</button>
+      </div>
+    </div>
+
+    <div class="card" id="cold-Card2" style="width: 300px;">
+      <div class="card-divider">
+        <h2>Iced Espresso</h2>
+      </div>
+      <div class="card-section">
+        <button class="button" id="ingredientsBtn">Click to see ingredients</button>
+      </div>
+    </div>
+
+    <div class="card" id="cold-Card3" style="width: 300px;">
+      <div class="card-divider">
+        <h2>Cold Brew</h2>
+      </div>
+      <div class="card-section">
+        <button class="button" id="ingredientsBtn">Click to see ingredients</button>
+      </div>
+    </div>
+
+    <div class="card" id="cold-Card4" style="width: 300px;">
+      <div class="card-divider">
+        <h2>Frappucino</h2>
+      </div>
+      <div class="card-section">
+        <button class="button" id="ingredientsBtn">Click to see ingredients</button>
+      </div>
+    </div>
+
+    <div class="card" id="cold-Card5" style="width: 300px;">
+      <div class="card-divider">
+        <h2>Nitro Brew</h2>
+      </div>
+      <div class="card-section">
+        <button class="button" id="ingredientsBtn">Click to see ingredients</button>
+      </div>
+    </div>
+
+    <div class="card" id="cold-Card6" style="width: 300px;">
+      <div class="card-divider">
+        <h2>Mazagran</h2>
+      </div>
+      <div class="card-section">
+        <button class="button" id="ingredientsBtn">Click to see ingredients</button>
+      </div>
     </div>
 
 
 
-    <div>
-        <!--what's a div?-->
-        <!--a modal goes here-->
-    </div>
 
-
-<!--Refresh button
-  <h1>Welcome to my webpage!</h1>
-[more content happens here i swear and promise]
-  <button onclick="location.reload()">Refresh</button> -->
-  <script></script> <!--insert js file here-->
-
-  <script src="/js/vendor/jquery.js"></script>
-  <script src="/js/vendor/fastclick.js"></script>
-  <script src="/js/foundation.min.js"></script>
-</body>
+    <script src="jquery.js"></script>
+    <script src="foundation.js"></script>
+    <script src="foundation.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
+  
