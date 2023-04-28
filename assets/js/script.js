@@ -1,3 +1,17 @@
+var requestUrl1='https://api.open-meteo.com/v1/forecast?latitude=37.87&longitude=-122.27&hourly=temperature_2m';
+
+
+fetch (requestUrl1)
+  .then((function(response) {
+    return response.json();
+  
+  })
+  .then (function(data){
+    console.log(response)
+
+var todaysWeather = document.createElement('h1');
+
+
 
 var requestUrl2='https://api.sampleapis.com/coffee/hot';
 
