@@ -1,4 +1,37 @@
-.card {
-  $card-background: lightgray
-  $card-border
+/* styling for the header */
+
+/* styling for the weather section */
+/*add icons?*/
+
+/* styling for hot button */
+#hot {
+  background: rgb(201, 96, 96);
+  border: 2px solid rgb(161, 74, 74);
+  border-radius: 35px;
+  width: 200px;
+  color: white;
+  font-family: SODO Sans,system-ui,BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
 }
+
+/* styling for cold button */
+#cold {
+  background: lightblue;
+  border: 2px solid rgb(140, 185, 200);
+  border-radius: 35px;
+  width: 200px;
+}
+
+/* styling modal button */
+#choose {
+  background: #7b4011;
+  border: 2px solid #5e2d06;
+  border-radius: 35px; 
+  font-family: SODO Sans,system-ui,BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+}
+
+/* styling for the modal tab */
+
+/* styling for coffee cards*/
+
+/* styling for overall webpage */
+/*for example, background color, centering the buttons*/
