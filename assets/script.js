@@ -1,5 +1,5 @@
 var coldFetch = document.getElementById('coldBtn');
-var ingredients = document.getElementById('ingredients');
+var ingredients = document.getElementById('ingredientsBtn');
 
 // used to reference the card that we intend to append the information to. 
 var cardBody1 = document.getElementById('cold-Card1');
