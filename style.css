@@ -1,10 +1,49 @@
-/* styling for the header */
+:root {
+  /* declare a variable with `--` syntax */
+  --foam: #F4F2F0;
+  --porcelain: #D7D2CE;
+  --caramel: #D3C0B2;
+  --latte: #A99282;
+  --coffee: #857B74;
+}
+
+/*styling for the body*/
+body {
+  background-color: var(--porcelain);
+}
+
+/*styling for the header */
+header {
+  background: var(--foam);
+  text-align: center;
+}
+
+/*styling for the header text, "EspresSun"*/
+header h1{
+  font-family: Lander Bold, Georgia, serif;
+  font-weight: 600;
+}
+
+/*styling for the header subtext, "Weather related coffee suggestions""*/
+header h2{
+  font-family: Pike,system-ui,BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+  
+}
 
 /* styling for the weather section */
 /*add icons?*/
+.weather{
+
+}
+
+#todaysWeather {
+  background: var(--caramel);
+  border-radius: 15px;
+  border: 2px solid var(--coffee);
+}
 
 /* styling for hot button */
-#hot {
+#hotBtn {
   background: rgb(201, 96, 96);
   border: 2px solid rgb(161, 74, 74);
   border-radius: 35px;
@@ -14,7 +53,7 @@
 }
 
 /* styling for cold button */
-#cold {
+#coldBtn {
   background: lightblue;
   border: 2px solid rgb(140, 185, 200);
   border-radius: 35px;
@@ -30,8 +69,42 @@
 }
 
 /* styling for the modal tab */
+#hotCold {
+  font-family: SODO Sans,system-ui,BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+  background: #E1E195;
+  border-radius: 35px;
+  border: 2px solid #D6D671; 
+}
+
+#modalHeader {
+  font-size: 20px;
+}
 
 /* styling for coffee cards*/
+.card{
+  border-radius: 15px;
+  border: 2px solid var(--coffee);
+  text-align: center;
+}
+
+.card h2 {
+  color: var(--foam);
+}
+
+.card-divider {
+  background: var(--latte);
+}
+
+.card-section {
+  background: var(--foam);
+}
+
+/* styling for the card ingredients button*/
+#ingredientsBtn{
+  background: var(--caramel);
+  border-radius: 15px;
+  border: 1px solid var(--coffee);
+}
 
 /* styling for overall webpage */
 /*for example, background color, centering the buttons*/
