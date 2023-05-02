@@ -31,12 +31,12 @@
   </div>
 
     <!--Coffee Modal-->
-    <p><a data-open="hotCold">Click me for coffee</a></p>
+    <p><a data-open="hotCold" >Click me for coffee</a></p>
 
     <div class="reveal" id="hotCold" data-reveal>
       <h1>Choose a button for a hot or cold coffee.</h1>
-      <button class="button" id="hotBtn">Hot Coffee</button>
-      <button class="button" id="coldBtn">Cold Coffee</button>
+      <button class="button" id="hotBtn" data-close aria-label="Close reveal">Hot Coffee</button>
+      <button class="button" id="coldBtn" data-close aria-label="Close reveal">Cold Coffee</button>
       <button class= "button" onclick="toggleCard()">Open Card</button>
       <button class="close-button" data-close aria-label="Close reveal" type="button">
         <span aria-hidden="true">&times;</span>
@@ -44,7 +44,7 @@
     </div>
 
 <!--Hot Coffees-->
-    <div class="card" id="hot-Card1" style="width: 300px;">
+    <div class="card" id="hot-Card1" style="width: 300px; display: none;">
       <div class="card-divider">
         <h2>Black</h2>
       </div>
@@ -53,7 +53,7 @@
       </div>
     </div>
 
-    <div class="card" id="hot-Card2" style="width: 300px;">
+    <div class="card" id="hot-Card2" style="width: 300px; display: none;">
       <div class="card-divider">
         <h2>Latte</h2>
       </div>
@@ -62,7 +62,7 @@
       </div>
     </div>
 
-    <div class="card" id="hot-Card3" style="width: 300px;">
+    <div class="card" id="hot-Card3" style="width: 300px; display: none;">
       <div class="card-divider">
         <h2>Cappucino</h2>
       </div>
@@ -71,7 +71,7 @@
       </div>
     </div>
 
-    <div class="card" id="hot-Card4" style="width: 300px;">
+    <div class="card" id="hot-Card4" style="width: 300px; display: none;">
       <div class="card-divider">
         <h2>Americano</h2>
       </div>
@@ -80,7 +80,7 @@
       </div>
     </div>
 
-    <div class="card" id="hot-Card5" style="width: 300px;">
+    <div class="card" id="hot-Card5" style="width: 300px; display: none;">
       <div class="card-divider">
         <h2>Espresso</h2>
       </div>
@@ -89,7 +89,7 @@
       </div>
     </div>
 
-    <div class="card" id="hot-Card6" style="width: 300px;">
+    <div class="card" id="hot-Card6" style="width: 300px; display: none;">
       <div class="card-divider">
         <h2>Dopio</h2>
       </div>
@@ -98,7 +98,7 @@
       </div>
     </div>
 
-    <div class="card" id="hot-Card7" style="width: 300px;">
+    <div class="card" id="hot-Card7" style="width: 300px; display: none;">
       <div class="card-divider">
         <h2>Cortado</h2>
       </div>
@@ -107,7 +107,7 @@
       </div>
     </div>
 
-    <div class="card" id="hot-Card8" style="width: 300px;">
+    <div class="card" id="hot-Card8" style="width: 300px; display: none;">
       <div class="card-divider">
         <h2>Galao</h2>
       </div>
@@ -116,7 +116,7 @@
       </div>
     </div>
 
-    <div class="card" id="hot-Card9" style="width: 300px;">
+    <div class="card" id="hot-Card9" style="width: 300px; display: none;">
       <div class="card-divider">
         <h2>Non Cumque Illo Opt</h2>
       </div>
@@ -126,57 +126,57 @@
     </div>
 
 <!--Cold Coffees-->
-    <div class="card" id="cold-Card1" style="width: 300px;">
+    <div class="card" id="cold-Card1" style="width: 300px; display: none;">
       <div class="card-divider">
         <h2>Iced Coffee</h2>
       </div>
       <div class="card-section">
-        <button class="button" id="ingredientsBtn">Click to see ingredients</button>
+        <button class="button" id="ingredientsBtn1">Click to see ingredients</button>
       </div>
     </div>
 
-    <div class="card" id="cold-Card2" style="width: 300px;">
+    <div class="card" id="cold-Card2" style="width: 300px; display: none;">
       <div class="card-divider">
         <h2>Iced Espresso</h2>
       </div>
       <div class="card-section">
-        <button class="button" id="ingredientsBtn">Click to see ingredients</button>
+        <button class="button" id="ingredientsBtn2">Click to see ingredients</button>
       </div>
     </div>
 
-    <div class="card" id="cold-Card3" style="width: 300px;">
+    <div class="card" id="cold-Card3" style="width: 300px; display: none;">
       <div class="card-divider">
         <h2>Cold Brew</h2>
       </div>
       <div class="card-section">
-        <button class="button" id="ingredientsBtn">Click to see ingredients</button>
+        <button class="button" id="ingredientsBtn3">Click to see ingredients</button>
       </div>
     </div>
 
-    <div class="card" id="cold-Card4" style="width: 300px;">
+    <div class="card" id="cold-Card4" style="width: 300px; display: none;">
       <div class="card-divider">
         <h2>Frappucino</h2>
       </div>
       <div class="card-section">
-        <button class="button" id="ingredientsBtn">Click to see ingredients</button>
+        <button class="button" id="ingredientsBtn4">Click to see ingredients</button>
       </div>
     </div>
 
-    <div class="card" id="cold-Card5" style="width: 300px;">
+    <div class="card" id="cold-Card5" style="width: 300px; display: none;">
       <div class="card-divider">
         <h2>Nitro Brew</h2>
       </div>
       <div class="card-section">
-        <button class="button" id="ingredientsBtn">Click to see ingredients</button>
+        <button class="button" id="ingredientsBtn5">Click to see ingredients</button>
       </div>
     </div>
 
-    <div class="card" id="cold-Card6" style="width: 300px;">
+    <div class="card" id="cold-Card6" style="width: 300px; display: none;">
       <div class="card-divider">
         <h2>Mazagran</h2>
       </div>
       <div class="card-section">
-        <button class="button" id="ingredientsBtn">Click to see ingredients</button>
+        <button class="button" id="ingredientsBtn6">Click to see ingredients</button>
       </div>
     </div>
 
@@ -187,7 +187,7 @@
     <script src="foundation.js"></script>
     <script src="foundation.min.js"></script>
     <script src="app.js"></script>
-    <script src="/assets/js/script.js" ></script>
+    <script src="script.js"></script>
   </body>
 </html>
   
