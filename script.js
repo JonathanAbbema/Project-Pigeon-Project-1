@@ -1,10 +1,28 @@
 var coldFetch = document.getElementById('coldBtn');
+var hotFetch = document.getElementById('hotBtn');
 var ing1 = document.getElementById('ingredientsBtn1');
 var ing2 = document.getElementById('ingredientsBtn2');
 var ing3 = document.getElementById('ingredientsBtn3');
 var ing4 = document.getElementById('ingredientsBtn4');
 var ing5 = document.getElementById('ingredientsBtn5');
-var ing6 = document.getElementById('ingredientsBtn6');
+var Hoting1 = document.getElementById('hotIngredientsBtn1');
+var Hoting2 = document.getElementById('hotIngredientsBtn2');
+var Hoting3 = document.getElementById('hotIngredientsBtn3');
+var Hoting4 = document.getElementById('hotIngredientsBtn4');
+var Hoting5 = document.getElementById('hotIngredientsBtn5');
+var Hoting6 = document.getElementById('hotIngredientsBtn6');
+var Hoting7 = document.getElementById('hotIngredientsBtn7');
+var Hoting8 = document.getElementById('hotIngredientsBtn8');
+var Hoting9 = document.getElementById('hotIngredientsBtn9');
+var hotCard1 = document.getElementById('hot-Card1');
+var hotCard2 = document.getElementById('hot-Card2');
+var hotCard3 = document.getElementById('hot-Card3');
+var hotCard4 = document.getElementById('hot-Card4');
+var hotCard5 = document.getElementById('hot-Card5');
+var hotCard6 = document.getElementById('hot-Card6');
+var hotCard7 = document.getElementById('hot-Card7');
+var hotCard8 = document.getElementById('hot-Card8');
+var hotCard9 = document.getElementById('hot-Card9');
 var coldCard1 = document.getElementById('cold-Card1');
 var coldCard2 = document.getElementById('cold-Card2');
 var coldCard3 = document.getElementById('cold-Card3');
@@ -174,36 +192,6 @@ function getColdIng1() {
 
   }
 
-  //function getColdIng6() {
-    // fetch request gets a list of the following iced Coffee Data: Description, ID, Image, Ingredients, and Title
-   // var requestUrl = 'https://api.sampleapis.com/coffee/iced';
-  
-    //fetch(requestUrl)
-      //.then(function (response) {
-        //return response.json();
-     // })
-      //.then(function (data) {
-
-       // console.log(data)
-        //for (var i = 5; i < 6; i++) {
-          // Creating elements, tablerow, tabledata, and anchor
-          //var createTableRow = document.createElement('tr');
-          //var tableData = document.createElement('td');
-          //var ing = document.createElement('li');
-
-          //ing.textContent = data[5].ingredients
-          //var apiData = ing.textContent
-
-          //tableData.appendChild(ing);
-          //createTableRow.appendChild(tableData);
-          //coldCard6.appendChild(createTableRow);
-
-          //console.log(apiData);
-
-       // }
-      //});
-
-  //}
 
 
 ing1.addEventListener('click', getColdIng1)
@@ -211,7 +199,7 @@ ing2.addEventListener('click', getColdIng2)
 ing3.addEventListener('click', getColdIng3)
 ing4.addEventListener('click', getColdIng4)
 ing5.addEventListener('click', getColdIng5)
-//ing6.addEventListener('click', getColdIng6)
+
 
 
 
@@ -232,14 +220,129 @@ ing5.addEventListener('click', getColdIng5)
      if (coldCard5.style.display === 'none') {
       coldCard5.style.display = 'block';
     }
-    // if (coldCard6.style.display === 'none') {
-     // coldCard6.style.display = 'block';
-   // }
     else {
       style.display = "none"
     }
   });
 
+// HOT API Call
+
+function getHotIng1() {
+  // fetch request gets a list of the following iced Coffee Data: Description, ID, Image, Ingredients, and Title
+  var requestUrl = 'https://api.sampleapis.com/coffee/hot';
+
+  fetch(requestUrl)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+
+      console.log(data)
+      for (var i = 0; i < 1; i++) {
+        // Creating elements, tablerow, tabledata, and anchor
+        var createTableRow = document.createElement('tr');
+        var tableData = document.createElement('td');
+        var ing = document.createElement('li');
+
+        ing.textContent = data[0].ingredients
+
+        // var apiData = ing.textContent
+        hotCard1.appendChild(createTableRow);
+        createTableRow.appendChild(tableData);
+        tableData.appendChild(ing);
+       
+        
+
+        //console.log(apiData);
+
+     }
+    });
+
+}
+
+function getHotIng2() {
+  // fetch request gets a list of the following iced Coffee Data: Description, ID, Image, Ingredients, and Title
+  var requestUrl = 'https://api.sampleapis.com/coffee/hot';
+
+  fetch(requestUrl)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+
+      console.log(data)
+      //for (var i = 0; i < 1; i++) {
+        // Creating elements, tablerow, tabledata, and anchor
+        var createTableRow = document.createElement('tr');
+        var tableData = document.createElement('td');
+        var ing = document.createElement('li');
+
+        ing.textContent = data[1].ingredients
+
+        // var apiData = ing.textContent
+        hotCard2.appendChild(createTableRow);
+        createTableRow.appendChild(tableData);
+        tableData.appendChild(ing);
+       
+        
+
+        //console.log(apiData);
+
+     //}
+    });
+
+}
+
+function getHotIng3() {
+  // fetch request gets a list of the following iced Coffee Data: Description, ID, Image, Ingredients, and Title
+  var requestUrl = 'https://api.sampleapis.com/coffee/hot';
+
+  fetch(requestUrl)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+
+      console.log(data)
+      //for (var i = 0; i < 1; i++) {
+        // Creating elements, tablerow, tabledata, and anchor
+        var createTableRow = document.createElement('tr');
+        var tableData = document.createElement('td');
+        var ing = document.createElement('li');
+
+        ing.textContent = data[2].ingredients
+
+        // var apiData = ing.textContent
+        hotCard3.appendChild(createTableRow);
+        createTableRow.appendChild(tableData);
+        tableData.appendChild(ing);
+       
+        
+
+        //console.log(apiData);
+
+     //}
+    });
+
+}
+
+Hoting1.addEventListener('click', getHotIng1);
+Hoting2.addEventListener('click', getHotIng2);
+Hoting3.addEventListener('click', getHotIng3);
+
+hotFetch.addEventListener('click', () => {
+  if(hotCard1.style.display === 'none'){
+    hotCard1.style.display = "block";
+  }if (hotCard2.style.display === 'none') {
+    hotCard2.style.display = 'block';
+  }
+  if (hotCard3.style.display === 'none') {
+    hotCard3.style.display = 'block';
+  }
+  else {
+    style.display = "none"
+  }
+});
 
 //Weather API Call 
 
