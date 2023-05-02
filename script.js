@@ -30,6 +30,7 @@ var coldCard4 = document.getElementById('cold-Card4');
 var coldCard5 = document.getElementById('cold-Card5');
 var coldCard6 = document.getElementById('cold-Card6');
 var modal = document.getElementById('hotCold');
+var refreshBtn = document.getElementById('refresh');
 
 // used to reference the card that we intend to append the information to. 
 var cardBody1 = document.getElementById('cold-Card1');
@@ -382,3 +383,12 @@ hotFetch.addEventListener('click', () => {
  todaysWeatherBtn.addEventListener("click",getWeatherApi)
  
  getWeatherApi();
+
+
+ // refresh button 
+
+ function refresh () {
+  window.location.reload();
+ }
+
+refreshBtn.addEventListener('click', refresh); 
