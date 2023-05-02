@@ -60,7 +60,7 @@ function getColdIng1() {
           createTableRow.appendChild(tableData);
           tableData.appendChild(ing);
          
-          
+          localStorage.setItem("Cold Ingredients 1", ing.textContent);
 
           //console.log(apiData);
 
@@ -93,6 +93,7 @@ function getColdIng1() {
           createTableRow.appendChild(tableData);
           coldCard2.appendChild(createTableRow);
 
+          localStorage.setItem("Cold Ingredients 2", ing.textContent);
           //console.log(apiData);
 
         }
@@ -124,6 +125,7 @@ function getColdIng1() {
           createTableRow.appendChild(tableData);
           coldCard3.appendChild(createTableRow);
 
+          localStorage.setItem("Cold Ingredients 3", ing.textContent);
           //console.log(apiData);
 
         }
@@ -155,6 +157,7 @@ function getColdIng1() {
           createTableRow.appendChild(tableData);
           coldCard4.appendChild(createTableRow);
 
+          localStorage.setItem("Cold Ingredients 4", ing.textContent);
           //console.log(apiData);
 
         }
@@ -186,6 +189,7 @@ function getColdIng1() {
           createTableRow.appendChild(tableData);
           coldCard5.appendChild(createTableRow);
 
+          localStorage.setItem("Cold Ingredients 5", ing.textContent);
           //console.log(apiData);
 
         }
@@ -252,7 +256,7 @@ function getHotIng1() {
         createTableRow.appendChild(tableData);
         tableData.appendChild(ing);
        
-        
+        localStorage.setItem("Hot Ingredients 1", ing.textContent);
 
         //console.log(apiData);
 
@@ -285,7 +289,7 @@ function getHotIng2() {
         createTableRow.appendChild(tableData);
         tableData.appendChild(ing);
        
-        
+        localStorage.setItem("Hot Ingredients 2", ing.textContent);
 
         //console.log(apiData);
 
@@ -318,7 +322,7 @@ function getHotIng3() {
         createTableRow.appendChild(tableData);
         tableData.appendChild(ing);
        
-        
+        localStorage.setItem("Hot Ingredients 3", ing.textContent);
 
         //console.log(apiData);
 
