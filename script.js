@@ -35,15 +35,17 @@ function getColdIng1() {
           var ing = document.createElement('li');
 
           ing.textContent = data[0].ingredients
-          var apiData = ing.textContent
 
-          tableData.appendChild(ing);
-          createTableRow.appendChild(tableData);
+          // var apiData = ing.textContent
           coldCard1.appendChild(createTableRow);
+          createTableRow.appendChild(tableData);
+          tableData.appendChild(ing);
+         
+          
 
           //console.log(apiData);
 
-        }
+       }
       });
 
   }
