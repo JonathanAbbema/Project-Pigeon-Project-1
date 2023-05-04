@@ -11,6 +11,7 @@
   </head>
   <body>
 <header>
+    <img src="EspresSun.png" alt="espressunlogo">
     <h1>EspresSun</h1>
     <h2>Berkeley weather related coffee suggestions</h2>
   </header>
@@ -18,7 +19,6 @@
             class = "button" style ="display: none">
              > Click for the current weather in Berkeley.</button>
    
-   <div class="grid-x">
     <div class="cell small-6 medium-6 large-6" id="high">
       Row 1, Column 1
     </div>
@@ -32,10 +32,12 @@
   </div>
 
     <!--Coffee Modal-->
+   <div id="coffeeClickMe">
     <p><a data-open="hotCold" >Click me for coffee</a></p>
+   </div>
 
     <div class="reveal" id="hotCold" data-reveal>
-      <h1>Choose a button for a hot or cold coffee.</h1>
+      <h1 id="modalHeader">Choose a button for a hot or cold coffee.</h1>
       <button class="button" id="hotBtn" data-close aria-label="Close reveal">Hot Coffee</button>
       <button class="button" id="coldBtn" data-close aria-label="Close reveal">Cold Coffee</button>
       <button class="close-button" data-close aria-label="Close reveal" type="button">
@@ -44,6 +46,7 @@
     </div>
 
 <!--Hot Coffees-->
+  <div id="container">
     <div class="card" id="hot-Card1" style="width: 300px; display: none;">
       <div class="card-divider">
         <h2>Black</h2>
@@ -70,6 +73,7 @@
         <button class="button" id="hotIngredientsBtn3">Click to see ingredients</button>
       </div>
     </div>
+</div>
 
     <!-- Cold Cards -->
 
@@ -118,8 +122,9 @@
       </div>
     </div>
 
+<div id="refresh">
 <button class="button" id="refresh">REFRESH PAGE</button>
-
+</div>
 
     <script src="jquery.js"></script>
     <script src="foundation.js"></script>

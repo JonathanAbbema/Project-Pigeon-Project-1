@@ -5,35 +5,52 @@
   --caramel: #D3C0B2;
   --latte: #A99282;
   --coffee: #857B74;
-}
-
-/*styling for the body*/
-body {
-  background-color: var(--porcelain);
+  --darkroast: #47220b;
+  --lessdarkroast: #54331d; 
+  
 }
 
 /*styling for the header */
 header {
-  background: var(--foam);
+  background: var(--darkroast);
   text-align: center;
+  padding-bottom: 25px; 
 }
 
 /*styling for the header text, "EspresSun"*/
 header h1{
-  font-family: Lander Bold, Georgia, serif;
+  font-family: 'Rubik Pixels', cursive;
   font-weight: 600;
+  color: white; 
 }
 
 /*styling for the header subtext, "Weather related coffee suggestions""*/
 header h2{
   font-family: Pike,system-ui,BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
-  
+  color: white;
+}
+
+header img{
+  width: 100px;
+}
+
+/*styling for the body*/
+body {
+  background: var(--lessdarkroast);
 }
 
 /* styling for the weather section */
-/*add icons?*/
-.weather{
 
+/* styling for the weather text*/
+#high {
+  text-align: center;
+  color: white;
+  padding-top: 25px;
+}
+
+#low {
+  text-align: center;
+  color: white;
 }
 
 #todaysWeather {
@@ -41,6 +58,20 @@ header h2{
   border-radius: 15px;
   border: 2px solid var(--coffee);
 }
+
+/*styling for Click Me for Coffee button*/
+#coffeeClickMe {
+  text-align: center;
+  color: white;
+  font-family: SODO Sans,system-ui,BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+  padding: 25px;
+}
+
+#coffeeClickMe a {
+  color: white;
+  text-decoration-line: underline;
+}
+
 
 /* styling for hot button */
 #hotBtn {
@@ -71,13 +102,19 @@ header h2{
 /* styling for the modal tab */
 #hotCold {
   font-family: SODO Sans,system-ui,BlinkMacSystemFont,-apple-system,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
-  background: #E1E195;
+  background: var(--latte);
   border-radius: 35px;
-  border: 2px solid #D6D671; 
+  border: 2px solid var(--lessdarkroast);
 }
 
 #modalHeader {
   font-size: 20px;
+  font-family: 'Rubik Pixels', cursive;
+}
+
+#container{
+  display: block;
+  justify-content: center;
 }
 
 /* styling for coffee cards*/
@@ -85,6 +122,7 @@ header h2{
   border-radius: 15px;
   border: 2px solid var(--coffee);
   text-align: center;
+  margin-left: 475px;
 }
 
 .card h2 {
@@ -106,6 +144,18 @@ header h2{
   border: 1px solid var(--coffee);
 }
 
+#refresh {
+  text-align: center;
+}
+
+#refreshBtn {
+  background: var(--latte);
+  border-radius: 15px;
+  border: 1px solid var(--coffee);
+}
 
 /* styling for overall webpage */
 /*for example, background color, centering the buttons*/
+html {
+  background: var(--darkroast);
+}
