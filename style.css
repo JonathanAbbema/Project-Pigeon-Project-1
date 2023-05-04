@@ -19,7 +19,7 @@ header {
 
 /*styling for the header text, "EspresSun"*/
 header h1{
-  font-family: 'Rubik Pixels', cursive;
+  font-family: 'Pacifico', 'Rubik Pixels', cursive, 'Lucida Handwriting', 'Lucida';
   font-weight: 600;
   color: white; 
 }
@@ -122,7 +122,6 @@ body {
   border-radius: 15px;
   border: 2px solid var(--coffee);
   text-align: center;
-  margin-left: 475px;
 }
 
 .card h2 {
