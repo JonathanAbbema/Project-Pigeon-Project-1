@@ -19,7 +19,7 @@ header {
 
 /*styling for the header text, "EspresSun"*/
 header h1{
-  font-family: 'Rubik Pixels', cursive;
+  font-family: 'Rubik Pixels', cursive, 'Lucida Handwriting', 'Lucida';
   font-weight: 600;
   color: white; 
 }
